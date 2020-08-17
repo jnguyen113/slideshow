@@ -1,21 +1,31 @@
 * {box-sizing: border-box;}
 h1{
     color: white;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    border: 5px solid white;
-    width: auto;
+    border: 6px solid white;
+    border-radius: 2%;
+    width: 1100px;
 }
 html{
-    background-color: rgb(25, 88, 184);
+  background: url('https://images.sonurai.com/HospitalReefs_EN-US8536480935_th.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  opacity: 100%;
 }
+
 .slideshow-container{
-    border: 5px solid white;
+    border: 10px solid white;
     border-radius: 2%;
     width: 1100px;
     height: auto;
     text-align:center;
     position: relative;
     margin: auto;
+    opacity: 100%;
+    
 }
 
 /*Hides the images*/
@@ -24,6 +34,10 @@ html{
    
 }
 
+.slideshow{
+  width: 500px;
+  height: 700px;
+}
 /* previous and next buttons */
 .prev, .next {
     cursor: pointer;

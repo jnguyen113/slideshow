@@ -25,15 +25,17 @@ function showSlides(n){
     }
     //if on the first slide and prev gets pushed go to last slide
     if(n < 1){
-        slideIndex = slideIndex.length;
+        slideIndex = slides.length;
     }
 
     for(i = 0 ; i < slides.length ; i++){
         slides[i].style.display = "none";
     }
+
     for(i = 0 ; i < dots.length ; i++){
         dots[i].className = dots[i].className.replace(" active", "");
     }
+    console.log(slides[slideIndex-1]);
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
